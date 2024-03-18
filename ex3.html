@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            background-color: antiquewhite;
+            border-style: dashed;
+            width: 500px;
+            height: 400px;
+            margin: 3rem;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+
+
+        input[type="range" i] {
+            width: 200px;
+            display: flex;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Register Form</h1>
+
+
+
+    <center>
+        <form action="https://web-503073.herokuapp.com/lab01/register.php" method=" post">
+            <table>
+                <tr>
+                    <td>Your Name</td>
+                    <td><input type="text" placeholder="Full Name"></td>
+                </tr>
+                <tr>
+                    <td>Email Address</td>
+                    <td><input type="email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td>Birthday</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Birthtime</td>
+                    <td><input type="time"></td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <label for="gender">Gender</label>
+                    </td>
+                    <td><input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>From</td>
+                    <td>
+                        <select style="width: 200px;" name="country" required>
+                            <option>Select a country</option>
+
+                            <optgroup label="Asia">
+                                <option>Viet Nam</option>
+                                <option>Lao</option>
+
+                            </optgroup>
+
+                            <optgroup label="Euro">
+                                <option>England</option>
+                                <option>Italy</option>
+
+                            </optgroup>
+
+
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: text-top;">Favorite IDE</td>
+                    <td>
+                        <input style="width: auto;" type="checkbox" value="VsCode">Visual Studio <br />
+                        <input style="width: auto;" type="checkbox" value="Subline Text">Subline Text<br />
+                        <input style="width: auto;" type="checkbox" value="Eclipse">Eclipse<br />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>TOEIC Score</td>
+                    <td><input type="range" max="999" min="5" step="5"></td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td>
+                        <textarea name="message" id="" cols="40"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input id="1" style="width: 80px;" type="button" value="Register">
+                        <input id="2" style="width: 50px; right: 100px;" type="button" value="Again">
+                    </td>
+                </tr>
+                </td>
+
+                </tr>
+
+
+
+
+            </table>
+
+            </table>
+        </form>
+    </center>
+
+</body>
+
+</html>
